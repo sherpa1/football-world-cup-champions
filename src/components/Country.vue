@@ -16,14 +16,13 @@ export default {
   data() {
     return {
       css_styles: {
-        color: this.color,
-        backgroundImage: "../assets/" + this.flag
+        color: this.color //création dynamique de style css
       }
     };
   },
   methods: {
     get_image() {
-      return require(`@/assets/flags/${this.flag}.png`);
+      return require(`@/assets/flags/${this.flag}.png`); //résolution dynamique d'url
     }
   }
 };
