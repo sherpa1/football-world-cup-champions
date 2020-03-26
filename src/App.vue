@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Country name="Italie" />
+    <Country name="Italie" color="blue" flag="italy.jpg" />
   </div>
 </template>
 
