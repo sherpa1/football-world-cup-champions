@@ -22,7 +22,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - affichage conditionnel avec v-if / v-else / v-show
 - traitement d'une collection de données via une boucle v-for
 - refactoring du code (utilisation d'un objet en tant que props à la place de plusieurs props)
-- création d'une classe Team (./src/models/Team.js)
+- création d'une classe Team (./src/models/Team.js) pour typage strict
 - gestion d'événement "click" avec la syntaxe @ + callback
 
 ## Installation des dépendances
