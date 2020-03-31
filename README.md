@@ -16,7 +16,6 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Utilisation de "data" et "methods"
 - Affichage dynamique d'assets (images) avec la syntaxe require
 - Personnalisation de styles CSS à partir de données internes (props + data)
-<<<<<<< HEAD
 
 ### Points évoqués lors du TD2
 
@@ -25,8 +24,6 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - refactoring du code (utilisation d'un objet en tant que props à la place de plusieurs props)
 - création d'une classe Team (./src/models/Team.js) pour typage strict
 - gestion d'événement "click" avec la syntaxe @ + callback
-=======
->>>>>>> d47f09779ab50815588aee9ceb463c371c0df67c
 
 ## Installation des dépendances
 
