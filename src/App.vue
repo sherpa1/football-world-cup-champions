@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Country App</h1>
+      <h1>Football World Cup Champions</h1>
     </header>
     <Country name="Italie" color="#3584e4" flag="italy" />
     <footer>
@@ -25,17 +25,11 @@ export default {
   }
 };
 </script>
-
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #2c2c32;
   color: white;
-}
-
-header {
-  font-size: 2em;
-  color: #41b883;
 }
 
 #app {
@@ -45,11 +39,28 @@ header {
   align-items: center;
 }
 
+header {
+  font-size: 2em;
+  color: #41b883;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+}
+
 footer {
   color: #41b883;
-  position: absolute;
-  bottom: 2em;
   text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 footer a {
