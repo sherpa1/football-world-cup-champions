@@ -16,6 +16,10 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Utilisation de "data" et "methods"
 - Affichage dynamique d'assets (images)
 
+### Points évoqués lors du TD2
+
+- traitement de données multiples via des boucles
+
 ## Installation des dépendances
 
 ```

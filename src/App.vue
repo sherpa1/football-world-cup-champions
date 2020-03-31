@@ -4,6 +4,14 @@
       <h1>Country App</h1>
     </header>
     <Country name="Italie" color="#3584e4" flag="italy" />
+    <Country
+      v-for="(a_country, index) in countries"
+      :name="a_country.name"
+      :color="a_country.color"
+      :flag="a_country.flag"
+      :key="index"
+    />
+
     <footer>
       <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
       <p>
@@ -22,6 +30,11 @@ export default {
   name: "App",
   components: {
     Country
+  },
+  data() {
+    return {
+      countries: [{ name: "Italie", color: "#3584e4", flag: "italy" }]
+    };
   }
 };
 </script>
