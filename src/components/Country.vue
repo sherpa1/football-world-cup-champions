@@ -29,7 +29,7 @@ export default {
       return require(`@/assets/flags/${this.team.get_image()}`); //résolution dynamique d'url
     },
     on_click() {
-      alert(`Le pays ${this.team.name} vient d'être cliqué`);
+      alert(`${this.team.name} has been clicked`);
     }
   }
 };
