@@ -1,29 +1,12 @@
 <template>
   <div id="app">
     <header>
-      <h1>Country App</h1>
+      <h1>Football World Cup Champions</h1>
     </header>
-<<<<<<< HEAD
-    <Country name="Italie" color="#3584e4" flag="italy" />
-    <Country
-      v-for="(a_country, index) in countries"
-      :name="a_country.name"
-      :color="a_country.color"
-      :flag="a_country.flag"
-      :key="index"
-    />
-=======
 
-    <!-- <Country name="Italie" color="#3584e4" flag="italy" /> -->
-    <!-- <Country :name="team.name" :color="team.color" :flag="team.flag" /> -->
-    <!-- <Country :team="team" /> -->
-
-    <!-- <Country :team="italy" />
-    <Country :team="france" />-->
-
-    <Country v-for="(one_team,index) in teams" :key="index" :team="one_team" />
->>>>>>> master
-
+    <main>
+      <Country v-for="(a_team,index) in teams" :key="index" :team="a_team" />
+    </main>
     <footer>
       <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
       <p>
@@ -40,13 +23,14 @@ import Country from "./components/Country";
 
 import Team from "./models/Team";
 
-const a_team = new Team("Italy", "italy", "#3584e4");
-
-const italy = new Team("Italy", "italy", "#3584e4");
-const france = new Team("France", "france", "#3584e4");
-const spain = new Team("Spain", "spain", "yellow");
-const england = new Team("England", "england", "#3584e4");
-const germany = new Team("Germany", "germany", "#3584e4");
+const italy = new Team("Italy", "italy", "#3584e4", 4);
+const france = new Team("France", "france", "blue", 2);
+const spain = new Team("Spain", "spain", "yellow", 1);
+const england = new Team("England", "england", "red", 1);
+const germany = new Team("Germany", "germany", "darkgrey", 4);
+const brazil = new Team("Brazil", "brazil", "green", 5);
+const argentina = new Team("Argentina", "argentina", "lightblue", 2);
+const uruguay = new Team("Uruguay", "uruguay", "lightblue", 2);
 
 export default {
   name: "App",
@@ -55,12 +39,16 @@ export default {
   },
   data() {
     return {
-<<<<<<< HEAD
-      countries: [{ name: "Italie", color: "#3584e4", flag: "italy" }]
-=======
-      team: a_team,
-      teams: [italy, france, spain, england, germany]
->>>>>>> master
+      teams: [
+        italy,
+        france,
+        spain,
+        england,
+        germany,
+        brazil,
+        uruguay,
+        argentina
+      ]
     };
   }
 };
@@ -73,11 +61,6 @@ body {
   color: white;
 }
 
-header {
-  font-size: 2em;
-  color: #41b883;
-}
-
 #app {
   display: flex;
   flex-direction: column;
@@ -85,11 +68,28 @@ header {
   align-items: center;
 }
 
+header {
+  font-size: 2em;
+  color: #41b883;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+}
+
 footer {
   color: #41b883;
-  position: absolute;
-  bottom: 2em;
   text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 footer a {
