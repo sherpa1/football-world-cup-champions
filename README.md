@@ -7,18 +7,23 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 ### Points évoqués lors du TD1
 
 - Découverte de Vue.js
-- Utilisation de Vue Cli pour la création du projet
+- Utilisation de Vue CLI pour la création du projet
 - Utilisation de npm ou yarn
 - Création d'un composant
-- Affichage dynamique du contenu d'une variable (syntaxe "Moustache")
+- Affichage dynamique du contenu d'une variable (syntaxe "Moustache" {{}})
 - Data Binding
 - Passage de paramètres "props"
 - Utilisation de "data" et "methods"
-- Affichage dynamique d'assets (images)
+- Affichage dynamique d'assets (images) avec la syntaxe require
+- Personnalisation de styles CSS à partir de données internes (props + data)
 
 ### Points évoqués lors du TD2
 
-- traitement de données multiples via des boucles
+- affichage conditionnel avec v-if / v-else / v-show
+- traitement d'une collection de données via une boucle v-for
+- refactoring du code (utilisation d'un objet en tant que props à la place de plusieurs props)
+- création d'une classe Team (./src/models/Team.js)
+- gestion d'événement "click" avec la syntaxe @ + callback
 
 ## Installation des dépendances
 

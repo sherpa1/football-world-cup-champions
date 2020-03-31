@@ -3,6 +3,7 @@
     <header>
       <h1>Country App</h1>
     </header>
+<<<<<<< HEAD
     <Country name="Italie" color="#3584e4" flag="italy" />
     <Country
       v-for="(a_country, index) in countries"
@@ -11,6 +12,17 @@
       :flag="a_country.flag"
       :key="index"
     />
+=======
+
+    <!-- <Country name="Italie" color="#3584e4" flag="italy" /> -->
+    <!-- <Country :name="team.name" :color="team.color" :flag="team.flag" /> -->
+    <!-- <Country :team="team" /> -->
+
+    <!-- <Country :team="italy" />
+    <Country :team="france" />-->
+
+    <Country v-for="(one_team,index) in teams" :key="index" :team="one_team" />
+>>>>>>> master
 
     <footer>
       <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
@@ -26,6 +38,16 @@
 <script>
 import Country from "./components/Country";
 
+import Team from "./models/Team";
+
+const a_team = new Team("Italy", "italy", "#3584e4");
+
+const italy = new Team("Italy", "italy", "#3584e4");
+const france = new Team("France", "france", "#3584e4");
+const spain = new Team("Spain", "spain", "yellow");
+const england = new Team("England", "england", "#3584e4");
+const germany = new Team("Germany", "germany", "#3584e4");
+
 export default {
   name: "App",
   components: {
@@ -33,7 +55,12 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       countries: [{ name: "Italie", color: "#3584e4", flag: "italy" }]
+=======
+      team: a_team,
+      teams: [italy, france, spain, england, germany]
+>>>>>>> master
     };
   }
 };
