@@ -27,7 +27,6 @@ export default {
   }
 };
 </script>
-
 <style>
 .container {
   display: flex;
@@ -40,9 +39,17 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
 }
 
 .flag {
   width: 3rem;
+}
+
+h2 {
+  font-size: 0.6em;
+  margin: 0;
+  padding: 0;
 }
 </style>
