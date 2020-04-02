@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 const router = new VueRouter(routes);
 
 Vue.config.productionTip = false
+//Vue.config.silent = true
 
 new Vue({
   router,

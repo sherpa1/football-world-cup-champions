@@ -23,6 +23,13 @@ export default {
   props: {
     team: Team
   },
+  data() {
+    return {
+      css_styles: {
+        color: this.team.color //création dynamique de style css
+      }
+    };
+  },
   methods: {
     get_world_cup_img() {
       return require(`@/assets/world-cup.png`);
@@ -30,6 +37,16 @@ export default {
     get_flag_img() {
       return require(`@/assets/flags/${this.team.get_image()}`); //résolution dynamique d'url
     }
+  },
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      //si team n'a pas été communiqué via l'attribut props, on redirige vers la vue master
+      if (typeof vm.team === "undefined") {
+        next({ name: "master" });
+      } else {
+        next();
+      }
+    });
   }
 };
 </script>

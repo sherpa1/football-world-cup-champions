@@ -4,7 +4,7 @@ Projet d'initiation à Vue.js.
 
 Avant de lancer l'application, veuillez vous assurer d'installer les dépendances du projet (définies dans le fichier package.json et installée dans le dossier node_modules, cf. instructions ci-dessous).
 
-### Points évoqués lors du TD1
+## Points évoqués lors du TD1
 
 - Découverte de Vue.js
 - Utilisation de Vue CLI pour la création du projet
@@ -17,7 +17,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Affichage dynamique d'assets (images) avec la syntaxe require
 - Personnalisation de styles CSS à partir de données internes (props + data)
 
-### Points évoqués lors du TD2
+## Points évoqués lors du TD2
 
 - affichage conditionnel avec v-if / v-else / v-show
 - traitement d'une collection de données via une boucle v-for
@@ -25,11 +25,13 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - création d'une classe Team (./src/models/Team.js) pour typage strict
 - gestion d'événement "click" avec la syntaxe @ + callback
 
-### Points évoqués lors du TD3
+## Points évoqués lors du TD3
 
 - Design Pattern ergonomique Master / Details
-- router Vue.js (npm install vue-router)
-- router link
+- Intégration du plugin Router de Vue.js (https://router.vuejs.org/)
+- Utilisation de Router Link et Router View
+- Effets de transition entre vues
+- Concept de Navigation Guards (https://router.vuejs.org/guide/advanced/navigation-guards.html)
 
 ## Installation des dépendances
 
@@ -42,6 +44,14 @@ ou
 ```
 yarn install
 ```
+
+## Installation du plugin Router de Vue.js
+
+`npm install vue-router)`
+
+ou
+
+`yarn add vue-router)`
 
 ### Compilation et Hot Reloading en phase de développement
 
