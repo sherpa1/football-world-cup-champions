@@ -5,7 +5,9 @@
         <router-link to="/">Football World Cup Champions</router-link>
       </h1>
     </header>
+
     <router-view></router-view>
+
     <footer>
       <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
       <p>

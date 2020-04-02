@@ -4,11 +4,11 @@
     <h2>{{team.name}}</h2>
     <div>
       <img
-        height="32px"
         v-for="(victory,index) in team.victories"
         :key="index"
-        class="world-cup"
         :src="get_world_cup_img()"
+        class="world-cup"
+        height="32px"
       />
     </div>
     <router-link class="back" to="/">go back</router-link>
@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     get_world_cup_img() {
-      return require(`@/assets/world-cup.png`); //résolution dynamique d'url
+      return require(`@/assets/world-cup.png`);
     },
     get_flag_img() {
       return require(`@/assets/flags/${this.team.get_image()}`); //résolution dynamique d'url
