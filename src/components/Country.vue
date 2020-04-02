@@ -1,9 +1,13 @@
 <template>
   <section class="container">
     <div class="country" :style="css_styles">
-      <img class="flag" :src="image()" />
-      <h2>{{team.name}}</h2>
-      <button @click="on_click">clic</button>
+      <router-link
+        :style="css_styles"
+        :to="{name:'details', params:{team:team,countryName:team.name}}"
+      >
+        <img class="flag" :src="get_flag_img()" />
+        <h2>{{team.name}}</h2>
+      </router-link>
     </div>
   </section>
 </template>
@@ -20,23 +24,30 @@ export default {
     return {
       css_styles: {
         color: this.team.color //création dynamique de style css
-      },
-      capitale: "Rome"
+      }
     };
   },
   methods: {
-    image() {
+    get_flag_img() {
       return require(`@/assets/flags/${this.team.get_image()}`); //résolution dynamique d'url
-    },
-    on_click() {
-      alert(`${this.team.name} has been clicked`);
     }
   }
 };
 </script>
 
 <style>
-.container {
+a,
+a.router-link-exact-active.router-link-active {
+  text-decoration: none !important;
+}
+
+a:hover,
+a.router-link-exact-active.router-link-active:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,6 +62,7 @@ export default {
   padding: 0.5em;
 }
 
+.world-cup,
 .flag {
   width: 3rem;
 }

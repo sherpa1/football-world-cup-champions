@@ -25,6 +25,12 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - création d'une classe Team (./src/models/Team.js) pour typage strict
 - gestion d'événement "click" avec la syntaxe @ + callback
 
+### Points évoqués lors du TD3
+
+- Design Pattern ergonomique Master / Details
+- router Vue.js (npm install vue-router)
+- router link
+
 ## Installation des dépendances
 
 ```
