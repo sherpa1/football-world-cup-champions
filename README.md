@@ -33,6 +33,14 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Effets de transition entre vues
 - Concept de Navigation Guards (https://router.vuejs.org/guide/advanced/navigation-guards.html)
 
+## Points évoqués lors du TD4
+
+- création d'une API Rest avec Firebase
+- installation du module NPM firebase
+- authentification avec Firebase (création d'une page sign in et sign up)
+- gestion de routes selon le statut d'utilisateur (connecté / non connecté)
+- utilisation du store de données Vuex
+
 ## Installation des dépendances
 
 ```
@@ -47,11 +55,27 @@ yarn install
 
 ## Installation du plugin Router de Vue.js
 
-`npm install vue-router)`
+`npm install vue-router`
 
 ou
 
-`yarn add vue-router)`
+`yarn add vue-router`
+
+## Installation du plugin Vuex de Vue.js
+
+`npm install vuex`
+
+ou
+
+`yarn add vuex`
+
+## Installation du plugin firebase
+
+`npm install firebase`
+
+ou
+
+`yarn add firebase`
 
 ### Compilation et Hot Reloading en phase de développement
 

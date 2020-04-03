@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <h1>
-        <router-link to="/">Football World Cup Champions</router-link>
+        <router-link to="/countries">Football World Cup Champions</router-link>
       </h1>
     </header>
 
