@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './routes';
-
 import * as firebase from "firebase";
+import store from "./store";
 // firebase init goes here
 const firebaseConfig = {
   apiKey: "AIzaSyA-CwBubIjp-IU8_Ky_06t2_adeB6CJXzA",
@@ -15,7 +15,12 @@ const firebaseConfig = {
   measurementId: "G-6HWK8Y1E0D"
 };
 
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig);
+
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
+});
+
 
 //const firebaseconfig = require('./firebaseConfig');
 
@@ -39,5 +44,6 @@ firebaseconfig.auth.onAuthStateChanged(user => {
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount("#app");

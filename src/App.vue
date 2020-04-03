@@ -10,8 +10,9 @@
       <router-view class="view"></router-view>
     </transition>
     <footer>
-      <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
-      <p>
+      <p class="title">Technologies Web pour l'Innovation</p>
+      <p>Alexandre Leroux (alex@sherpa.one) - Enseignant à l'Université de Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
+      <p class="credits">
         Icons made by
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -31,6 +32,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #2c2c32;
   color: white;
+}
+
+.title {
+  font-weight: bold;
 }
 
 #app {
@@ -87,5 +92,9 @@ footer a:hover {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+
+.credits {
+  font-size: 0.6em;
 }
 </style>

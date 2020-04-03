@@ -37,7 +37,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 
 - création d'une API Rest avec Firebase
 - installation du module NPM firebase
-- authentification avec Firebase (création d'une page sign in et sign up)
+- authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
 - gestion de routes selon le statut d'utilisateur (connecté / non connecté)
 - utilisation du store de données Vuex
 
