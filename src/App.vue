@@ -11,7 +11,9 @@
     </transition>
     <footer>
       <p class="title">Technologies Web pour l'Innovation</p>
-      <p>Alexandre Leroux (alex@sherpa.one) - Enseignant à l'Université de Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
+      <p
+        class="mentions"
+      >Alexandre Leroux (alex@sherpa.one) - Enseignant à l'Université de Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
       <p class="credits">
         Icons made by
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
@@ -94,6 +96,9 @@ footer a:hover {
   opacity: 0;
 }
 
+.mentions {
+  font-size: 0.8em;
+}
 .credits {
   font-size: 0.6em;
 }

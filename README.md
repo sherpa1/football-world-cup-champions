@@ -35,11 +35,11 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 
 ## Points évoqués lors du TD4
 
-- création d'une API Rest avec Firebase
-- installation du module NPM firebase
+- création d'une API Rest avec Firebase (https://console.firebase.google.com/)
+- installation du module NPM firebase (https://www.npmjs.com/package/firebase)
 - authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
 - gestion de routes selon le statut d'utilisateur (connecté / non connecté)
-- utilisation du store de données Vuex
+- utilisation du store de données Vuex (https://vuex.vuejs.org/fr/guide/)
 
 ## Installation des dépendances
 

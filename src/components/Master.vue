@@ -23,14 +23,14 @@
 import Country from "./Country";
 import { mapGetters } from "vuex";
 import * as firebase from "firebase";
-//import Team from "../models/Team";
+import Team from "../models/Team";
+
+import { db } from "../firebase";
 
 export default {
   name: "Master",
   data() {
-    return {
-      teams: []
-    };
+    return {};
   },
   components: {
     Country
@@ -48,10 +48,34 @@ export default {
     }
   },
   computed: {
+    teams() {
+      const mapped_teams = [];
+      this.countries.forEach(a_country => {
+        mapped_teams.push(
+          new Team(
+            a_country.name,
+            a_country.flag,
+            a_country.color,
+            a_country.victories
+          )
+        );
+      });
+
+      return mapped_teams;
+    },
     // map `this.user` to `this.$store.getters.user`
     ...mapGetters({
       user: "user"
     })
+  },
+  created() {
+    const a_team = new Team();
+    console.log(a_team);
+  },
+  firestore() {
+    return {
+      countries: db.collection("countries")
+    };
   }
 };
 </script>
