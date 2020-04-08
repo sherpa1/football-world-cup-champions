@@ -20,16 +20,14 @@ export default {
   props: {
     team: Team
   },
-  data() {
-    return {
-      css_styles: {
-        color: this.team.color //création dynamique de style css
-      }
-    };
-  },
   methods: {
     get_flag_img() {
       return require(`@/assets/flags/${this.team.get_image()}`); //résolution dynamique d'url
+    }
+  },
+  computed: {
+    css_styles() {
+      return { color: this.team.color }; //création dynamique de style css
     }
   }
 };

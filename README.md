@@ -44,6 +44,10 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Utilisation de computed (https://fr.vuejs.org/v2/guide/computed.html)
 - Utilisation d'un filtre pour forcer l'utilisation d'une majuscule pour le prénom et le nom d'un nouvel utilisateur (https://vuejs.org/v2/api/#Vue-filter)
 
+## Points évoqués lors du TD5
+
+- store de données Vuex (https://vuex.vuejs.org/)
+
 ## Installation des dépendances
 
 ```
@@ -56,7 +60,7 @@ ou
 yarn install
 ```
 
-## Installation du plugin Router de Vue.js
+## Installation du plugin Router de Vue.js (https://router.vuejs.org/)
 
 `npm install vue-router`
 
@@ -64,7 +68,7 @@ ou
 
 `yarn add vue-router`
 
-## Installation du plugin Vuex de Vue.js
+## Installation du plugin Vuex de Vue.js (https://vuex.vuejs.org/)
 
 `npm install vuex`
 
