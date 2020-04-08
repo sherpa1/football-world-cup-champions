@@ -39,6 +39,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - installation du module NPM firebase (https://www.npmjs.com/package/firebase)
 - authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
 - gestion de routes selon le statut d'utilisateur (connecté / non connecté)
+- installation des modules npm firebase et vue-firestore
 
 ## Installation des dépendances
 

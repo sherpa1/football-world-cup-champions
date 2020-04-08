@@ -22,10 +22,11 @@
 <script>
 import Country from "./Country";
 import { mapGetters } from "vuex";
-import * as firebase from "firebase";
-import Team from "../models/Team";
 
+import * as firebase from "firebase";
 import { db } from "../firebase";
+
+import Team from "../models/Team";
 
 export default {
   name: "Master",
@@ -50,15 +51,16 @@ export default {
   computed: {
     teams() {
       const mapped_teams = [];
+
       this.countries.forEach(a_country => {
-        mapped_teams.push(
-          new Team(
-            a_country.name,
-            a_country.flag,
-            a_country.color,
-            a_country.victories
-          )
+        const a_new_team = new Team(
+          a_country.name,
+          a_country.flag,
+          a_country.color,
+          a_country.victories
         );
+
+        mapped_teams.push(a_new_team);
       });
 
       return mapped_teams;
