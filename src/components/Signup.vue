@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form>
+    <form action="#" @submit.prevent="signup">
       <div v-if="error">{{error}}</div>
 
       <input v-model.trim="user.firstname" type="string" name="firstname" placeholder="Firstname" />

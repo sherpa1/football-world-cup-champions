@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form>
+    <form action="#" @submit.prevent="signin">
       <input v-model.trim="user.email" type="email" name="login" placeholder="Email Address" />
       <input v-model.trim="user.password" type="password" name="password" placeholder="Password" />
       <button :disabled="!form_is_completed" @click="signin" class="button">Sign In</button>
