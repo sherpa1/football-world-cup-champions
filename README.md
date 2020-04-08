@@ -36,9 +36,9 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 ## Points évoqués lors du TD4
 
 - Création d'une API avec Firebase (https://console.firebase.google.com/)
-- Création d'une base de données Firestore dans Firebase
+- Création d'une base de données Firestore (https://firebase.google.com/docs/firestore)
 - Installation des modules npm firebase (https://www.npmjs.com/package/firebase) et vue-firestore pour gérer l'interaction avec Firebase et Firestore (https://www.npmjs.com/package/vue-firestore)
-- Authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
+- Authentification avec Firebase, création d'une page sign in et sign up, et action sign out (https://firebase.google.com/docs/auth)
 - Gestion de routes selon le statut d'utilisateur (connecté / non connecté)
 - Data-binding sur l'attribut disabled d'un button
 - Utilisation de computed (https://fr.vuejs.org/v2/guide/computed.html)
