@@ -35,11 +35,14 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 
 ## Points évoqués lors du TD4
 
-- création d'une API Rest avec Firebase (https://console.firebase.google.com/)
-- installation du module NPM firebase (https://www.npmjs.com/package/firebase)
-- authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
-- gestion de routes selon le statut d'utilisateur (connecté / non connecté)
-- installation des modules npm firebase et vue-firestore
+- Création d'une API avec Firebase (https://console.firebase.google.com/)
+- Création d'une base de données Firestore dans Firebase
+- Installation des modules npm firebase (https://www.npmjs.com/package/firebase) et vue-firestore pour gérer l'interaction avec Firebase et Firestore (https://www.npmjs.com/package/vue-firestore)
+- Authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
+- Gestion de routes selon le statut d'utilisateur (connecté / non connecté)
+- Data-binding sur l'attribut disabled d'un button
+- Utilisation de computed (https://fr.vuejs.org/v2/guide/computed.html)
+- Utilisation d'un filtre pour forcer l'utilisation d'une majuscule pour le prénom et le nom d'un nouvel utilisateur (https://vuejs.org/v2/api/#Vue-filter)
 
 ## Installation des dépendances
 
@@ -69,13 +72,21 @@ ou
 
 `yarn add vuex`
 
-## Installation du plugin firebase
+## Installation du plugin firebase (https://www.npmjs.com/package/firebase)
 
 `npm install firebase`
 
 ou
 
 `yarn add firebase`
+
+## Installation du plugin vue-firestore (https://www.npmjs.com/package/vue-firestore)
+
+`npm install vue-firestore`
+
+ou
+
+`yarn add vue-firestore`
 
 ### Compilation et Hot Reloading en phase de développement
 

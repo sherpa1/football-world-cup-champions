@@ -1,5 +1,6 @@
 //Rename to firebase.js
 
+/*
 import { firebase } from "@firebase/app";
 import "@firebase/firestore";
 
@@ -17,3 +18,4 @@ const firebaseApp = {
 firebase.initializeApp(firebaseApp);
 
 export const db = firebase.firestore();
+*/

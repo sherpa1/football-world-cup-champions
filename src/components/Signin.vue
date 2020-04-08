@@ -1,11 +1,28 @@
 <template>
   <div>
     <form action="#" @submit.prevent="signin">
-      <input v-model.trim="user.email" type="email" name="login" placeholder="Email Address" />
-      <input v-model.trim="user.password" type="password" name="password" placeholder="Password" />
-      <button :disabled="!form_is_completed" @click="signin" class="button">Sign In</button>
+      <div class="error" v-if="error">{{error}}</div>
+      <input
+        v-model.trim="user.email"
+        type="email"
+        name="login"
+        placeholder="Email Address"
+        required
+      />
+      <input
+        v-model.trim="user.password"
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+      <button :disabled="!form_is_completed" type="submit" class="button">Sign In</button>
     </form>
-    <router-link to="signup">Don't have an account yet ? Sign up</router-link>
+    <router-link to="signup">
+      Don't have an account yet ?
+      <span>Sign up</span>
+    </router-link>
+    <div class="success" v-if="success">{{success}}</div>
   </div>
 </template>
 
@@ -20,11 +37,15 @@ export default {
         email: "",
         password: ""
       },
-      error: ""
+      error: "",
+      success: ""
     };
   },
   methods: {
     signin() {
+      this.error = "";
+      this.success = "";
+
       firebase
         .auth()
         .signInWithEmailAndPassword(this.user.email, this.user.password)
@@ -33,6 +54,7 @@ export default {
           this.$router.replace({ name: "master" });
         })
         .catch(err => {
+          this.success = "";
           this.error = err.message;
         });
     }
@@ -50,7 +72,9 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 15em;
+  align-items: center;
+  height: 18em;
+  width: 30%;
 }
 
 button {
@@ -60,6 +84,7 @@ button {
   background: #41b883;
   color: white;
   border: none;
+  width: 60%;
 }
 button:disabled {
   opacity: 0.7;
@@ -72,5 +97,18 @@ a {
 }
 a:hover {
   color: #41b883;
+}
+
+span {
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+.error {
+  color: tomato;
+}
+
+.success {
+  color: yellowgreen;
 }
 </style>

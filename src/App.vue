@@ -102,4 +102,11 @@ footer a:hover {
 .credits {
   font-size: 0.6em;
 }
+
+.view {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
 </style>

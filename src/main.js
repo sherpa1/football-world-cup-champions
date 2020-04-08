@@ -6,6 +6,8 @@ import store from "./store";
 
 import VueFirestore from 'vue-firestore';
 
+import "@/helpers/filters";
+
 firebase.auth().onAuthStateChanged(user => {
   store.dispatch("fetchUser", user);
 });
