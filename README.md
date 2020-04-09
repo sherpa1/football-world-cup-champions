@@ -50,7 +50,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - classement de données par ordre ascendant / descendant (nombre de victoires en Coupe du Monde / ordre alphabétique)
 - filtre des données par continent d'appartenance
 - intégration d'une fonction permettant de créer un Array JS contenant un intervalle de nombre
-- intégration du module Chart.js (https://www.chartjs.org/) via vue-chart (https://vue-chartjs.org/)
+- intégration du module Chart.js (https://www.chartjs.org/) via vue-chartjs (https://vue-chartjs.org/)
 - modification du modèle de données Team (ajout du continent)
 - store de données Vuex (https://vuex.vuejs.org/)
 - utilisation d'un helper permettant de mettre les attributs firstname et lastname de l'utilisateur avec une majuscule à la première lettre dans l'écran Sign Up (./src/helpers/filters.js)
@@ -111,11 +111,11 @@ ou
 
 ## Installation des plugins vue-chart (https://vue-chartjs.org/) et chartjs
 
-`npm install vue-firestore chart.js`
+`npm install vue-chartjs chart.js`
 
 ou
 
-`yarn add vue-firestore chart.js`
+`yarn add vue-chartjs chart.js`
 
 ### Compilation et Hot Reloading en phase de développement
 
