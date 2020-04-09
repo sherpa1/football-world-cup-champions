@@ -17,8 +17,8 @@
     <label>Order by</label>
     <select v-model="orderby">
       <option value="-1">Alphabetical (asc)</option>
-      <option value="1">Victories (asc)</option>
-      <option value="0">Victories (desc)</option>
+      <option value="1">Victories (desc)</option>
+      <option value="0">Victories (asc)</option>
     </select>
     <label>Filter by</label>
     <select v-model="filterby">
@@ -28,7 +28,9 @@
         :value="continent"
       >{{continent}}</option>
     </select>
+
     <Country v-show="teams.length" v-for="(a_team,index) in teams" :key="index" :team="a_team" />
+
     <p v-show="countries.length===0">Loading...</p>
     <p v-show="teams.length===0">There is no team for this selection</p>
   </div>
@@ -74,7 +76,7 @@ export default {
   computed: {
     continent_filters() {
       let a = Team.CONTINENTS;
-      if (a.length === 7) a.unshift("all");
+      if (a.length === 7) a.unshift("All");
       return a;
     },
 
@@ -123,8 +125,7 @@ export default {
     ...mapGetters({
       user: "user"
     })
-  },
-  created() {}
+  }
 };
 </script>
 
