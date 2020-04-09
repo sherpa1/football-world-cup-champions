@@ -43,9 +43,15 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - Data-binding sur l'attribut disabled d'un button
 - Utilisation de computed (https://fr.vuejs.org/v2/guide/computed.html)
 - Utilisation d'un filtre pour forcer l'utilisation d'une majuscule pour le prénom et le nom d'un nouvel utilisateur (https://vuejs.org/v2/api/#Vue-filter)
+- conversion de données fournies par Firebase en objets de type Team
 
 ## Points évoqués lors du TD5
 
+- classement de données par ordre ascendant / descendant (nombre de victoires en Coupe du Monde / ordre alphabétique)
+- filtre des données par continent d'appartenance
+- intégration d'une fonction permettant de créer un Array JS contenant un intervalle de nombre
+- intégration du module Chart.js (https://www.chartjs.org/) via vue-chart (https://vue-chartjs.org/)
+- modification du modèle de données Team (ajout du continent)
 - store de données Vuex (https://vuex.vuejs.org/)
 
 ## Installation des dépendances
@@ -92,6 +98,14 @@ ou
 
 `yarn add vue-firestore`
 
+## Installation des plugins vue-chart (https://vue-chartjs.org/) et chartjs
+
+`npm install vue-firestore chart.js`
+
+ou
+
+`yarn add vue-firestore chart.js`
+
 ### Compilation et Hot Reloading en phase de développement
 
 ```
@@ -109,6 +123,19 @@ yarn build
 ```
 yarn lint
 ```
+
+#### Crédits
+
+- Vue.js : https://vuejs.org/
+- Vuex : https://vuex.vuejs.org/
+- Chartjs : https://www.chartjs.org/
+- Vue-chart : https://vue-chartjs.org/
+- Tutoriel Vue.js + Firebase : https://blog.logrocket.com/vue-firebase-authentication/
+- Tutoriel Vue-firestore : https://alligator.io/vuejs/vue-cloud-firestore/
+- Matt Zabriskie : https://gist.github.com/mzabriskie
+- Icons by Freepik : https://www.flaticon.com
+- Firebase : https://www.npmjs.com/package/firebase
+- Vue-firestore : https://www.npmjs.com/package/vue-firestore
 
 #### Alexandre Leroux <alex@sherpa.one>
 

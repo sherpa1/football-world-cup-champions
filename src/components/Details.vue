@@ -2,7 +2,8 @@
   <div class="country container" :style="css_styles">
     <img class="flag" :src="get_flag_img()" />
     <h2>{{team.name}}</h2>
-    <div>
+    <h3>{{team.continent}}</h3>
+    <div class="victories">
       <img
         v-for="(victory,index) in team.victories"
         :key="index"
@@ -11,15 +12,20 @@
         height="32px"
       />
     </div>
+    <Chart :team="team" />
     <router-link class="back" to="/countries">go back</router-link>
   </div>
 </template>
 
 <script>
 import Team from "../models/Team";
+import Chart from "./Chart";
 
 export default {
   name: "Details",
+  components: {
+    Chart
+  },
   props: {
     team: Team
   },
@@ -91,5 +97,15 @@ h2 {
   font-size: 0.6em;
   margin: 0;
   padding: 0;
+}
+h3 {
+  font-size: 0.4em;
+  margin: 0;
+  padding: 0;
+}
+
+div.victories {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 </style>
