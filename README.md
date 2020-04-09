@@ -53,6 +53,17 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 - intégration du module Chart.js (https://www.chartjs.org/) via vue-chart (https://vue-chartjs.org/)
 - modification du modèle de données Team (ajout du continent)
 - store de données Vuex (https://vuex.vuejs.org/)
+- utilisation d'un helper permettant de mettre les attributs firstname et lastname de l'utilisateur avec une majuscule à la première lettre dans l'écran Sign Up (./src/helpers/filters.js)
+
+## Modèle de données
+
+nom de la collection : "countries"
+
+name : string (ex : "Italy")
+color : string (ex : "blue") -> couleur css ou héxadécimale
+flag : string (ex : "italy") -> nom du pays en minuscules, en anglais
+victories : array (ex : [1934, 1938, 1982, 2006]) -> tableau contenant les années de victoire du pays en coupe de monde de football
+continent : string (ex : "Europe") -> valeurs acceptées : 'Europe', 'South America', 'North America', 'Africa', 'Oceania', 'Asia', 'Antarctica'
 
 ## Installation des dépendances
 
