@@ -3,7 +3,9 @@
     <header>
       <h1>Football World Cup Champions</h1>
     </header>
+
     <Country name="Italie" color="#3584e4" flag="italy" />
+
     <footer>
       <p>Alexandre Leroux - Enseignant à l'Université Lorraine (IUT Charlemagne - Institut des Sciences du Digital)</p>
       <p>

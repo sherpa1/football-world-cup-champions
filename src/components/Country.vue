@@ -15,14 +15,22 @@ export default {
   },
   data() {
     return {
-      css_styles: {
-        color: this.color //création dynamique de style css
-      }
+      // css_styles: {
+      //   color: this.color //création dynamique de style css
+      // }
     };
   },
   methods: {
     get_image() {
       return require(`@/assets/flags/${this.flag}.png`); //résolution dynamique d'url
+    }
+    // css_styles() {
+    //   return { color: this.color }; //création dynamique de style css
+    // }
+  },
+  computed: {
+    css_styles() {
+      return { color: this.color }; //création dynamique de style css
     }
   }
 };
