@@ -45,13 +45,13 @@ ou
 yarn install
 ```
 
-## Installation du plugin Router de Vue.js
+## Installation du plugin Router de Vue.js (https://router.vuejs.org/)
 
-`npm install vue-router)`
+`npm install vue-router`
 
 ou
 
-`yarn add vue-router)`
+`yarn add vue-router`
 
 ### Compilation et Hot Reloading en phase de développement
 
@@ -70,6 +70,19 @@ yarn build
 ```
 yarn lint
 ```
+
+#### Crédits
+
+- Vue.js : https://vuejs.org/
+- Vuex : https://vuex.vuejs.org/
+- Chartjs : https://www.chartjs.org/
+- Vue-chart : https://vue-chartjs.org/
+- Tutoriel Vue.js + Firebase : https://blog.logrocket.com/vue-firebase-authentication/
+- Tutoriel Vue-firestore : https://alligator.io/vuejs/vue-cloud-firestore/
+- Matt Zabriskie : https://gist.github.com/mzabriskie
+- Icons by Freepik : https://www.flaticon.com
+- Firebase : https://www.npmjs.com/package/firebase
+- Vue-firestore : https://www.npmjs.com/package/vue-firestore
 
 #### Alexandre Leroux <alex@sherpa.one>
 
