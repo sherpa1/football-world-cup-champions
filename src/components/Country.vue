@@ -20,8 +20,7 @@ export default {
     return {
       css_styles: {
         color: this.team.color //création dynamique de style css
-      },
-      capitale: "Rome"
+      }
     };
   },
   methods: {
