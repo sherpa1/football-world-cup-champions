@@ -4,7 +4,7 @@ Projet d'initiation à Vue.js.
 
 Avant de lancer l'application, veuillez vous assurer d'installer les dépendances du projet (définies dans le fichier package.json et installée dans le dossier node_modules, cf. instructions ci-dessous).
 
-### Points évoqués lors du TD1
+## Points évoqués lors du TD1
 
 - Découverte de Vue.js
 - Utilisation de Vue CLI pour la création du projet
@@ -46,6 +46,19 @@ yarn build
 ```
 yarn lint
 ```
+
+#### Crédits
+
+- Vue.js : https://vuejs.org/
+- Vuex : https://vuex.vuejs.org/
+- Chartjs : https://www.chartjs.org/
+- Vue-chart : https://vue-chartjs.org/
+- Tutoriel Vue.js + Firebase : https://blog.logrocket.com/vue-firebase-authentication/
+- Tutoriel Vue-firestore : https://alligator.io/vuejs/vue-cloud-firestore/
+- Matt Zabriskie : https://gist.github.com/mzabriskie
+- Icons by Freepik : https://www.flaticon.com
+- Firebase : https://www.npmjs.com/package/firebase
+- Vue-firestore : https://www.npmjs.com/package/vue-firestore
 
 #### Alexandre Leroux <alex@sherpa.one>
 
