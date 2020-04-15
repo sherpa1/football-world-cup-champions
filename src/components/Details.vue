@@ -11,7 +11,7 @@
         height="32px"
       />
     </div>
-    <router-link class="back" to="/">go back</router-link>
+    <router-link class="back" to="/countries">go back</router-link>
   </div>
 </template>
 
