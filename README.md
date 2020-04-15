@@ -29,6 +29,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 
 - Design Pattern ergonomique Master / Details
 - Intégration du plugin Router de Vue.js (https://router.vuejs.org/)
+- Utilisation du mode History dans le routing
 - Utilisation de Router Link et Router View
 - Effets de transition entre vues
 - Concept de Navigation Guards (https://router.vuejs.org/guide/advanced/navigation-guards.html)
@@ -52,6 +53,10 @@ yarn install
 ou
 
 `yarn add vue-router`
+
+ou
+
+`vue add router`
 
 ### Compilation et Hot Reloading en phase de développement
 

@@ -2,6 +2,7 @@ import Master from "../components/Master";
 import Details from "../components/Details";
 
 export default {
+    mode: "history",
     routes: [
         {
             path: '/',
