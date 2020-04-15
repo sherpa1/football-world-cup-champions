@@ -36,13 +36,24 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 ## Points évoqués lors du TD4
 
 - Création d'une API avec Firebase (https://console.firebase.google.com/)
-- Création d'une base de données Firestore dans Firebase
+- Création d'une base de données Firestore (https://firebase.google.com/docs/firestore)
 - Installation des modules npm firebase (https://www.npmjs.com/package/firebase) et vue-firestore pour gérer l'interaction avec Firebase et Firestore (https://www.npmjs.com/package/vue-firestore)
-- Authentification avec Firebase (création d'une page sign in et sign up, et action sign out)
+- Authentification avec Firebase, création d'une page sign in et sign up, et action sign out (https://firebase.google.com/docs/auth)
 - Gestion de routes selon le statut d'utilisateur (connecté / non connecté)
 - Data-binding sur l'attribut disabled d'un button
 - Utilisation de computed (https://fr.vuejs.org/v2/guide/computed.html)
 - Utilisation d'un filtre pour forcer l'utilisation d'une majuscule pour le prénom et le nom d'un nouvel utilisateur (https://vuejs.org/v2/api/#Vue-filter)
+- conversion de données fournies par Firebase en objets de type Team
+
+## Modèle de données
+
+nom de la collection : "countries"
+
+name : string (ex : "Italy")
+color : string (ex : "blue") -> couleur css ou héxadécimale
+flag : string (ex : "italy") -> nom du pays en minuscules, en anglais
+victories : array (ex : [1934, 1938, 1982, 2006]) -> tableau contenant les années de victoire du pays en coupe de monde de football
+continent : string (ex : "Europe") -> valeurs acceptées : 'Europe', 'South America', 'North America', 'Africa', 'Oceania', 'Asia', 'Antarctica'
 
 ## Installation des dépendances
 
@@ -56,7 +67,7 @@ ou
 yarn install
 ```
 
-## Installation du plugin Router de Vue.js
+## Installation du plugin Router de Vue.js (https://router.vuejs.org/)
 
 `npm install vue-router`
 
@@ -64,7 +75,7 @@ ou
 
 `yarn add vue-router`
 
-## Installation du plugin Vuex de Vue.js
+## Installation du plugin Vuex de Vue.js (https://vuex.vuejs.org/)
 
 `npm install vuex`
 
@@ -105,6 +116,19 @@ yarn build
 ```
 yarn lint
 ```
+
+#### Crédits
+
+- Vue.js : https://vuejs.org/
+- Vuex : https://vuex.vuejs.org/
+- Chartjs : https://www.chartjs.org/
+- Vue-chart : https://vue-chartjs.org/
+- Tutoriel Vue.js + Firebase : https://blog.logrocket.com/vue-firebase-authentication/
+- Tutoriel Vue-firestore : https://alligator.io/vuejs/vue-cloud-firestore/
+- Matt Zabriskie : https://gist.github.com/mzabriskie
+- Icons by Freepik : https://www.flaticon.com
+- Firebase : https://www.npmjs.com/package/firebase
+- Vue-firestore : https://www.npmjs.com/package/vue-firestore
 
 #### Alexandre Leroux <alex@sherpa.one>
 
