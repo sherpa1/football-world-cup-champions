@@ -52,9 +52,6 @@ h1 {
   margin: 0;
 }
 
-main {
-}
-
 footer {
   color: #41b883;
   text-align: center;
