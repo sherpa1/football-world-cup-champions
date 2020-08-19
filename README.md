@@ -35,6 +35,7 @@ Avant de lancer l'application, veuillez vous assurer d'installer les dépendance
 
 ## Points évoqués lors du TD4
 
+- !! __Attention__ !! : renommer le fichier `./src/rename-to-firebase.js` en `./src/firebase.js` et renseigner les informations de connexion à l'API
 - Création d'une API avec Firebase (https://console.firebase.google.com/)
 - Création d'une base de données Firestore (https://firebase.google.com/docs/firestore)
 - Installation des modules npm firebase (https://www.npmjs.com/package/firebase) et vue-firestore pour gérer l'interaction avec Firebase et Firestore (https://www.npmjs.com/package/vue-firestore)
